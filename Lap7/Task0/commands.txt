@@ -1,0 +1,5 @@
+awk '{print $3"\t "$4}' mark.txt
+ awk '/a/{print $2"\t"$4}' mark.txt
+ awk '{print $1"" $4" "$3" "$2}' mark.txt
+ awk '/English/{sum+=1} END {printf "%d\n",sum}' mark.txt
+ awk '$4>87 {print $1}' mark.txt
